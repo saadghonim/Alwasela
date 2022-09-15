@@ -1,0 +1,100 @@
+.nav-tabs {
+  border: none;
+}
+.new-ads {
+  background-color: $color_1;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.tab-content {
+  margin-bottom: 20px;
+}
+.nav-tabs > li > a {
+  @include flex-var(flex, center, center);
+  height: 42px;
+  transition: 0.5s;
+  background-color: #ebebeb;
+  font-size: 16px;
+  color: #959595;
+  font-weight: 700;
+  text-transform: capitalize;
+  border: none;
+  margin: 0;
+  margin-inline-end: 5px;
+  padding: 0 20px;
+  &:hover {
+    text-decoration: none;
+    background-color: $color_1;
+    // border: none;
+    margin: 0;
+    margin-inline-end: 5px;
+  }
+}
+
+.nav-tabs {
+  .nav-item {
+    margin: 0;
+  }
+  .nav-link {
+    border-radius: inherit;
+    white-space: nowrap;
+    border: none;
+    &:hover {
+      border-color: transparent;
+      border: none;
+    }
+    &:focus {
+      border-color: transparent;
+      border: none;
+    }
+  }
+  .nav-link.active {
+    border: none;
+    color: #231f20;
+  }
+}
+.nav-tabs > li.active > a {
+  background-color: $color_1;
+}
+.tab-content .active .tab-pane {
+  padding-top: 30px;
+}
+.tab-content > .active {
+  padding-top: 30px;
+  background-color: $color_1;
+}
+@include min_ {
+  .add_mob_slider {
+    @include grid-var(grid, repeat(4, 1fr), 25px);
+    // padding: 0px 30px;
+  }
+}
+.anc-ads-more {
+  font-size: 14px;
+  line-height: 30px;
+  color: #b3b3b3;
+  width: 118px;
+  height: 34px;
+  border-radius: 2px;
+  background-color: $color_4;
+  margin-bottom: 35px;
+  font-weight: 400;
+  &:hover {
+    background-color: $red_color;
+    color: $color_1;
+  }
+}
+
+@include xs {
+  #myTab.nav-tabs {
+    overflow-x: auto;
+    overflow-y: hidden;
+    flex-wrap: inherit;
+  }
+  .new-ads {
+    padding: 0 20px;
+    .tab-content {
+      margin-bottom: 50px;
+    }
+  }
+}

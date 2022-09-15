@@ -1,0 +1,54 @@
+.most_searched_seciton {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.most_searched {
+  background-color: $color_1;
+  padding: 35px 30px 50px;
+  .title_secondary {
+    margin: 0;
+  }
+}
+.item-most_searched {
+  display: flex;
+  justify-content: center;
+}
+.anc_most_searched {
+  width: 162px;
+  height: 162px;
+  border-radius: 50%;
+  font-size: 14px;
+  color: $black2_color;
+  font-weight: 700;
+  box-shadow: (0 0 7.5px rgba(0, 0, 0, 0.1));
+  background-color: $color_1;
+  border: 1px solid #ededed;
+  @include flex-var(flex, center, center);
+  flex-direction: column;
+
+  figure {
+    width: 54px;
+    height: 44px;
+    margin-bottom: 15px;
+    @include flex-var(flex, center, center);
+    img {
+      filter: invert(19%) sepia(49%) saturate(4579%) hue-rotate(342deg)
+        brightness(110%) contrast(92%);
+      max-width: 100%;
+      width: auto !important;
+    }
+  }
+  &:hover {
+    background-color: $red_color;
+    color: $color_1;
+    img {
+      filter: invert(99%) sepia(0%) saturate(0%) hue-rotate(215deg)
+        brightness(117%) contrast(100%);
+    }
+  }
+}
+@include xs {
+  .most_searched {
+    padding: 35px 0 40px;
+  }
+}

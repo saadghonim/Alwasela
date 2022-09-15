@@ -1,0 +1,15 @@
+.ad_area_section {
+  .ad_area {
+    margin-bottom: 15px;
+
+    text-align: center;
+  }
+  .as_area_img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    img {
+      max-width: 100%;
+    }
+  }
+}

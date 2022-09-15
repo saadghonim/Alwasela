@@ -1,0 +1,34 @@
+@import "sass/abstracts/variables";
+@import "sass/abstracts/mixins";
+@import "sass/abstracts/functions";
+
+//layout
+@import "sass/base/base";
+@import "sass/base/fonts";
+
+//components
+@import "sass/components/about_us";
+@import "sass/components/services";
+@import "sass/components/slider";
+@import "sass/components/banner";
+@import "sass/components/featured-ads";
+@import "sass/components/ad_space";
+@import "sass/components/most_searched";
+@import "sass/components/new-ads";
+
+//layout
+@import "sass/layout/header";
+@import "sass/layout/footer";
+
+//pages
+@import "sass/pages/about-us";
+@import "sass/pages/category";
+@import "sass/pages/add-post";
+@import "sass/pages/dashboard-edit-info";
+@import "sass/pages/dashboard-msgs";
+@import "sass/pages/dashboard-subscription.scss";
+@import "sass/pages/services";
+@import "sass/pages/dashboard-favoraite-posts";
+@import "sass/pages/singel-page";
+@import "sass/pages/sign-up-step";
+@import "sass/pages/commercial-page";

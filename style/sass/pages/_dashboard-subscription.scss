@@ -1,0 +1,161 @@
+.div-alert {
+  border: 1px dashed #b7b7b7;
+  width: 100%;
+  @include flex_var(flex, center, space-between);
+  padding: 10px 15px;
+  margin-bottom: 45px;
+  p {
+    font-size: 16px;
+    color: $red_color;
+    font-weight: 700;
+  }
+  button {
+    background-color: $red_color;
+    width: 100px;
+    height: 36px;
+    border-radius: 2px;
+    color: $color_1;
+    font-size: 16px;
+    font-weight: 700;
+    border: 1px solid $red_color;
+  }
+}
+.single-dashboard {
+  padding: 0 30px;
+}
+.single-dashboard-content {
+  width: 100%;
+}
+.packages {
+  .title_dashboard {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+// ~~~~~~~~~~~~~~~~~~~~~
+.form__radio-input {
+  display: none;
+}
+
+.form__label-radio {
+  cursor: pointer;
+  position: relative;
+  margin: 0;
+}
+
+.form__radio-button {
+  width: 15px;
+  height: 15px;
+  box-shadow: inset 1px 1.732px 1.5px rgba(0, 0, 0, 0.35);
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  margin-inline-end: 10px;
+}
+.form__radio-button::after {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $red_color;
+  opacity: 0;
+  transition: opacity 0.2s;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+
+.form__radio-input:checked ~ .form__label-radio .form__radio-button::after {
+  opacity: 1;
+}
+.packages-group {
+  margin-bottom: 45px;
+
+  @include grid-var(grid, repeat(3, 1fr), 5px);
+  .name-package {
+    font-size: 17px;
+    color: #ffffff;
+    font-weight: 700;
+    text-align: center;
+    background-color: #e21a34;
+    padding: 20px;
+  }
+  .form__radio-group {
+    padding: 15px;
+    background-color: $black3_color;
+    color: $color_1;
+    text-align: center;
+  }
+}
+.for-days {
+  font-size: 16px;
+  color: #231f20;
+  display: block;
+  padding: 15px;
+  border-radius: 2px;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+// ~~~~~pay
+.pay-group {
+  text-align: center;
+  margin-bottom: 50px;
+  .title-pay {
+    font-size: 17px;
+    color: $black3_color;
+    margin-bottom: 15px;
+  }
+  .img-pay {
+    width: 207px;
+    height: 76px;
+    border-radius: 3px;
+    margin: 0 auto 30px;
+    @include flex_var(flex, center, center);
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.15));
+    background-color: #ffffff;
+    img {
+      max-width: 100%;
+    }
+  }
+  .btn_pay {
+    min-width: 206px;
+    height: 50px;
+    border-radius: 2px;
+    padding: 0 20px;
+    background-color: $red_color;
+    color: $color_1;
+    border: 1px solid $red_color;
+    font-size: 16px;
+    margin: auto;
+    font-weight: 700;
+    &:hover {
+      color: $red_color;
+    }
+  }
+}
+
+@include xs {
+  .packages-group {
+    @include grid-var(grid, repeat(1, 1fr), 20px);
+  }
+  .single-dashboard {
+    flex-direction: column;
+    padding: 0;
+  }
+  .div-alert {
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px 15px;
+    p {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  }
+}
+.single-dashboard.news_ {
+  padding-bottom: 220px;
+}

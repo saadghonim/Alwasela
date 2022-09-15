@@ -1,0 +1,228 @@
+footer {
+  background-color: $black2_color;
+}
+.footer {
+  padding: 70px 0 85px;
+
+  .item_footer {
+    text-align: start;
+  }
+
+  .btn_footer,
+  .title_newsletter {
+    font-size: 16px;
+    color: $color_1;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    text-align: start;
+  }
+  .anc_footer {
+    font-size: 13px;
+    color: #ababab;
+    margin-bottom: 10px;
+    &:hover {
+      color: $color_1;
+    }
+  }
+  .news-p {
+    font-size: 14px;
+    color: $color_1;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-align: start;
+  }
+}
+.input_news {
+  position: relative;
+  margin-bottom: 25px;
+  input {
+    width: 100%;
+    height: 42px;
+    border-radius: 2px;
+    padding: 0 20px;
+    font-size: 14px;
+    color: #b3b3b3;
+    border: none;
+    &:focus {
+      outline: 0;
+      border: 1px solid $red_color;
+    }
+  }
+  .btn-newsletter {
+    position: absolute;
+    top: 0;
+    height: 42px;
+    border-radius: 2px;
+    background-color: $red_color;
+    width: 95px;
+    font-size: 14px;
+    color: $color_1;
+    font-weight: 700;
+    @include en {
+      right: 0;
+    }
+    @include ar {
+      left: 0;
+    }
+    &:hover {
+      color: $red_color;
+      background-color: transparent;
+    }
+  }
+}
+
+@include min_xs {
+  .ul_footer.collapse {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.d_none {
+  display: none;
+}
+.ul-social-media {
+  text-align: center;
+  margin-bottom: 40px;
+  .anc_social {
+    padding: 0 10px;
+    font-size: 18px;
+    color: #838383;
+    font-weight: 400;
+    &:hover {
+      color: $color_1;
+    }
+  }
+}
+.phone_div {
+  text-align: center;
+  .anc_phone {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background-color: rgb(60, 154, 104);
+    display: flex;
+    @include flex-var(flex, center, center);
+    color: $color_1;
+    background-color: rgb(60, 160, 60);
+    animation: animate 2s linear infinite;
+  }
+  .num_ {
+    font-size: 24px;
+    letter-spacing: 4px;
+    color: #ffffff;
+    font-weight: 700;
+  }
+}
+.phone_div {
+  margin-bottom: 60px;
+}
+.brand {
+  text-align: center;
+  img {
+    max-width: 100%;
+  }
+}
+@keyframes animate {
+  0% {
+    box-shadow: 0 0 0 0 rgba(60, 160, 60, 0.7), 0 0 0 0 rgba(60, 160, 60, 0.7);
+  }
+  40% {
+    box-shadow: 0 0 0 10px rgba(185, 15, 58, 0), 0 0 0 0 rgba(60, 160, 60, 0.7);
+  }
+  80% {
+    box-shadow: 0 0 0 5px rgba(60, 160, 60, 0.3),
+      0 0 0 5px rgba(60, 160, 60, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(60, 160, 60, 0), 0 0 0 10px rgba(255, 0, 64, 0);
+  }
+}
+.copyrights {
+  padding: 15px 0;
+  border-top: 1px solid #332f30;
+  @include flex-var(flex, center, space-between);
+  .ul-nav-footer {
+    @include flex-var(flex, center, flex-start);
+    .anc_nav_footer {
+      font-size: 13px;
+      color: #ababab;
+      font-weight: 400;
+      margin-inline-start: 15px;
+      &:hover {
+        color: $color_1;
+      }
+    }
+  }
+  > p {
+    font-size: 13px;
+    color: #ababab;
+    font-weight: 400;
+  }
+}
+@include xs {
+  .input_news {
+    input {
+      margin-bottom: 5px;
+    }
+    .btn-newsletter {
+      position: static;
+      width: 100%;
+      &:hover {
+        color: $color_1;
+        background-color: $red_color;
+      }
+    }
+  }
+
+  .copyrights {
+    justify-content: center;
+    padding: 0 0 50px;
+    border: none;
+    > p {
+      text-align: center;
+      line-height: 1.6;
+    }
+    .ul-nav-footer {
+      display: none;
+    }
+  }
+  .d_none {
+    display: block;
+  }
+  .item_footer {
+    background-color: #272324;
+    padding: 15px 20px;
+    margin-bottom: 5px;
+  }
+  .footer {
+    padding: 10px 0 50px;
+    .title_newsletter {
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 10px;
+    }
+    .btn_footer {
+      margin-bottom: 0;
+      width: 100%;
+      text-align: start;
+    }
+    .ul_footer {
+      li {
+        &:first-child {
+          a {
+            margin-top: 15px;
+          }
+        }
+      }
+    }
+    .anc_footer {
+      margin: 5px 0;
+      margin-inline-start: 10px;
+    }
+    .news-p {
+      text-align: center;
+    }
+  }
+}

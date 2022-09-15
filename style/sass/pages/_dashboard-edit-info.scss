@@ -1,0 +1,119 @@
+.dashboard-edit-info {
+  background-color: $color_1;
+  padding: 10px 30px 50px;
+  margin-bottom: 10px;
+  display: flex;
+  .add_mob_slider {
+    @include grid-var(grid, repeat(3, 1fr), 20px);
+  }
+}
+.title_dashboard {
+  font-size: 20px;
+  text-transform: capitalize;
+  color: $black3_color;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-align: start;
+}
+.side_panel {
+  padding: 20px 15px 15px;
+  margin-inline-end: 20px;
+  width: 262px;
+  height: 295px;
+  background-color: $color_1;
+  border: 1px solid #e0e0e0;
+  height: max-content;
+  flex-shrink: 0;
+  position: sticky;
+  top: 10px;
+  @include xs {
+    position: static;
+  }
+}
+.ul_side_panel {
+  text-align: start;
+  i {
+    width: 20px;
+    text-align: center;
+    margin-inline-end: 10px;
+  }
+  li {
+    padding: 0 15px;
+    width: 100%;
+    &:last-child {
+      .anc_dashboard {
+        border: none;
+      }
+    }
+  }
+  .anc_dashboard {
+    display: block;
+    padding: 6px 0;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #959494;
+    font-weight: 500;
+    border-bottom: 1px solid #efefef;
+    &:hover {
+      color: $black_color;
+    }
+  }
+}
+.dashboard-edit-info {
+  form {
+    padding: 0;
+    @include xs {
+      padding: 0 15px;
+    }
+    .group_input {
+      gap: 15px;
+    }
+  }
+  .change_password {
+    display: flex;
+    align-items: flex-end;
+    .anc_agreechange {
+      height: 45px;
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      text-decoration: underline;
+      color: #e21a34;
+      @include xs {
+        height: auto;
+      }
+    }
+  }
+  .anc_register {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: "Frutiger LT Arabic";
+    text-align: right;
+    width: 180px;
+    height: 50px;
+    border-radius: 2px;
+    background-color: #e21a34;
+    border: 1px solid transparent;
+    @include flex-var(flex, center, center);
+    &:hover {
+      color: $red_color;
+      border-color: $red_color;
+    }
+  }
+}
+@include xs {
+  .dashboard-edit-info {
+    padding: 0px 0px 50px;
+    margin-bottom: 10px;
+    flex-direction: column;
+    .add_mob_slider {
+      @include grid-var(grid, repeat(2, 1fr), 15px);
+    }
+  }
+  .side_panel {
+    margin-bottom: 40px;
+    width: 100%;
+    margin-inline-end: 0;
+  }
+}

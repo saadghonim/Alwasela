@@ -1,0 +1,112 @@
+.sign-up-page {
+  padding: 30px 0 90px;
+  margin-bottom: 10px;
+  background-color: $color_1;
+  .nav-tabs {
+    margin: 0 60px;
+    justify-content: center;
+    border-bottom: 1px solid #ebebeb;
+    .nav-link.active {
+      border: 1px solid #ebebeb;
+      border-bottom: none;
+    }
+  }
+  .tab-content > .active {
+    padding-top: 45px;
+  }
+}
+.join-us {
+  .btn_pay {
+    @include flex-var(flex, center, center);
+  }
+  h4 {
+    font-size: 20px;
+    color: #e21a34;
+    font-weight: 700;
+    margin-bottom: 50px;
+  }
+}
+
+@include xs {
+  .sign-up-page {
+    .nav-tabs {
+      margin: 0;
+    }
+  }
+}
+@include min_xs {
+  .sign-up-page {
+    form {
+      @include grid-var(grid, repeat(2, 1fr), 0px 30px);
+      padding: 0px;
+    }
+  }
+  .group_form_sign_up {
+    padding: 0 60px;
+  }
+}
+
+.group_form_sign_up {
+  .radio-checkmark-box_ {
+    margin-bottom: 20px;
+    justify-content: start;
+  }
+}
+
+.btn-robot {
+  display: flex;
+  align-items: center;
+  img {
+    margin-inline-end: 100px;
+  }
+  .anc_register {
+    min-width: 206px;
+    padding: 0 20px;
+    height: 50px;
+    border-radius: 2px;
+    background-color: #e21a34;
+    @include flex-var(flex, center, center);
+    font-size: 16px;
+    line-height: 30px;
+    color: #ffffff;
+    border: 1px solid transparent;
+    font-weight: 700;
+    &:hover {
+      color: $red_color;
+      border-color: $red_color;
+    }
+  }
+}
+.registered {
+  img {
+    margin-bottom: 20px;
+  }
+  .done_ {
+    font-size: 20px;
+    color: #e21a34;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .done_p {
+    font-size: 16px;
+    color: #231f20;
+  }
+}
+@include xs {
+  .btn-robot {
+    flex-direction: column;
+    img {
+      margin-bottom: 20px;
+      margin-inline-end: 0;
+    }
+  }
+  .group_form_sign_up {
+    form {
+      padding: 0px 15px;
+    }
+    .radio-checkmark-box_ {
+      justify-content: center;
+    }
+  }
+}
