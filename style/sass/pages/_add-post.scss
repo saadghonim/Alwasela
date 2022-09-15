@@ -32,6 +32,7 @@ label.not_r {
 }
 @include xs {
   .add_ads_post {
+    padding-top: 30px;
     form {
       width: 100%;
       padding: 0 20px;
@@ -222,5 +223,10 @@ input[type="checkbox"] {
 @include xs {
   .radio {
     margin-inline-end: 10px;
+  }
+  .add_ads_post {
+    .radio-checkmark-box {
+      font-size: 14px;
+    }
   }
 }

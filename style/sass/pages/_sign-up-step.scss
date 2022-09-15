@@ -94,6 +94,22 @@
   }
 }
 @include xs {
+  .sign_up_content {
+    padding: 0 20px;
+    .new-ads {
+      padding: 0;
+      form {
+        padding: 0;
+      }
+    }
+    #myTab.nav-tabs {
+      .nav-link {
+        margin: 0;
+        border: none;
+      }
+      flex-direction: column;
+    }
+  }
   .btn-robot {
     flex-direction: column;
     img {

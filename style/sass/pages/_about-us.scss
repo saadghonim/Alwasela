@@ -184,4 +184,13 @@ form {
       }
     }
   }
+  .about-us {
+    padding-top: 30px;
+    .group_input {
+      gap: 0;
+    }
+    form {
+      padding: 0 20px;
+    }
+  }
 }

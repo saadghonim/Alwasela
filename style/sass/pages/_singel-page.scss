@@ -89,6 +89,7 @@
     }
     &:hover {
       color: $color_1;
+      background-color: $red_color;
     }
   }
 }
@@ -96,6 +97,17 @@
   .slider_singel {
     .owl-carousel .owl-nav.disabled {
       display: none;
+    }
+  }
+  .title_and_price {
+    .title_dashboard,
+    .price-page-singel {
+      font-size: 18px;
+    }
+  }
+  .details-map {
+    img {
+      margin: 0;
     }
   }
 }
@@ -162,6 +174,7 @@
   .item-details {
     margin-bottom: 10px;
     display: flex;
+    align-items: center;
     h5 {
       width: 130px;
       text-align: start;
@@ -291,6 +304,13 @@
     .anc_dashboard {
       padding: 5px 0;
       font-size: 16px;
+    }
+  }
+}
+@include xs {
+  .details-map {
+    img {
+      margin: 0;
     }
   }
 }

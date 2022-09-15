@@ -69,8 +69,15 @@
   .anc_service_order_ {
     margin: auto;
   }
-  .services_page .nav-tabs {
-    margin-bottom: 20px;
+  .services_page {
+    .nav-tabs {
+      padding: 0 10px 40px;
+      flex-direction: column;
+      margin: 0;
+    }
+    .nav-tabs {
+      margin-bottom: 20px;
+    }
   }
   .tab-content > .active {
     padding: 0;
@@ -164,7 +171,7 @@
 }
 @include xs {
   .services_page {
-    padding: 30px 0 0px;
+    padding: 30px 10 0px;
   }
   .order-services-popup {
     height: 90vh;

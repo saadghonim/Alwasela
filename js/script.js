@@ -175,15 +175,13 @@ $(document).ready(function () {
   $(".featured_bottom .owl-carousel").owlCarousel({
     loop: true,
     margin: 30,
-    stagePadding: 30,
+    // stagePadding: 30,
     nav: false,
-    // autoplay: true,
+    autoplay: true,
     rtl: $("html").attr("dir") == "rtl" ? true : false,
     responsive: {
       0: {
         items: 1,
-        margin: 20,
-        stagePadding: 20,
       },
       600: {
         items: 3,
@@ -197,7 +195,7 @@ $(document).ready(function () {
 
   $(".slide-grid .owl-carousel").owlCarousel({
     loop: true,
-    stagePadding: 30,
+    // stagePadding: 30,
     margin: 30,
     nav: false,
     // autoplay: true,
@@ -309,15 +307,13 @@ $(document).ready(function () {
   $(".slide_commercial .owl-carousel").owlCarousel({
     loop: true,
     margin: 30,
-    // stagePadding: 30,
     nav: false,
-    // autoplay: true,
+    autoplay: true,
     rtl: $("html").attr("dir") == "rtl" ? true : false,
     responsive: {
       0: {
         items: 1,
         margin: 20,
-        stagePadding: 20,
       },
       600: {
         items: 2,
